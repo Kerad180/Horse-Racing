@@ -12,12 +12,10 @@ export const RaceTracks = () => {
         new horse(3, 'Red', 'src/components/pictures/red-horse.png')
     ]
 
-    if(isStarted) {alert('start'), console.log("start")}
-
     return (            
         <>
             <section id='tracks'>
-                {horses.map((horse) => (<Horses key={horse.id} name={horse.name} urlPicture={horse.urlPicture}/>))}
+                {horses.map((horse) => (<Horses key={horse.id} name={horse.name} urlPicture={horse.urlPicture} isStarted = {isStarted}/>))}
             </section>
             <section id='containerStartButton'>
                 <button id='startButton' onClick={() => setIsStarted(true)}>Start</button>
