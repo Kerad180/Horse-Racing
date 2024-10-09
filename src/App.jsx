@@ -1,5 +1,5 @@
-import './App.css'
 import { RaceTracks } from './components/RaceTracks'
+import './App.css'
 
 function App() {
 

@@ -1,6 +1,7 @@
 import { useState } from "react"
 import horse from "./horse"
 import { Horses } from "./Horses"
+import './RaceTracks.css'
 
 export const RaceTracks = () => {
     const [isStarted, setIsStarted] = useState(false);
