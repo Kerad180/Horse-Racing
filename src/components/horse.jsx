@@ -1,7 +1,7 @@
-export default class horse {
-    constructor(id, name, urlPicture) {
-        this.id = id
-        this.name = name
-        this.urlPicture = urlPicture
-    }
-}
+import './Horse.css'
+export const Horse = (props) => {
+
+    return(
+        <div className='horse' name={props.name} onClick={() => console.log(props.name)}><img src={props.urlPicture}/></div>
+    )
+};
